@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Grader Quality Console"
+description = "A clickable UI prototype for monitoring physician grader agreement and drift, triaging disagreements and hard cases, and previewing LLM pre-screen outcomes. Uses sample data only, with no backend or clinical decision logic."
+version = "1.0.0"
+id = "artifacts/grader-quality"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24657
+
+[services.development]
+run = "pnpm --filter @workspace/grader-quality run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/grader-quality", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/grader-quality/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24657"
+BASE_PATH = "/"

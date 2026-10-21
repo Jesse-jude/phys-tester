@@ -1,0 +1,5992 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-20T20:24:56.451766+00:00",
+  "dataset": {
+    "name": "GRAND-ROUNDS public release",
+    "items": 4339,
+    "scoredItems": 3749,
+    "scores": 7193,
+    "tasks": 5,
+    "graders": 10,
+    "models": 21,
+    "studies": 8,
+    "meanScoresPerItem": 1.66
+  },
+  "overview": {
+    "meanQwk": 0.7068,
+    "minQwk": 0.3708,
+    "casesForReview": 1510,
+    "reviewRate": 0.348,
+    "stableRows": 13,
+    "flaggedRows": 5,
+    "insufficientRows": 1,
+    "totalRows": 19,
+    "uniqueGraders": 10,
+    "autoCoverage": null,
+    "autoPrecision": null,
+    "judgeModel": null
+  },
+  "tasks": [
+    {
+      "name": "cpc_bond",
+      "label": "CPC Bond",
+      "items": 853,
+      "scoredItems": 853,
+      "scores": 1467,
+      "graders": 3,
+      "qwk": 0.7249,
+      "icc": 0.7259,
+      "alpha": 0.7122,
+      "exact": 0.7655,
+      "spread": 0.0691,
+      "needsHuman": 383,
+      "reviewRate": 0.449,
+      "flagCounts": {
+        "high_spread": 144,
+        "insufficient_graders": 239,
+        "high_iqr": 45
+      },
+      "scoreScale": "0\u20135",
+      "normalized": false
+    },
+    {
+      "name": "cpc_management",
+      "label": "CPC Management",
+      "items": 131,
+      "scoredItems": 131,
+      "scores": 261,
+      "graders": 2,
+      "qwk": 0.3708,
+      "icc": 0.3726,
+      "alpha": 0.3655,
+      "exact": 0.8692,
+      "spread": 0.0692,
+      "needsHuman": 18,
+      "reviewRate": 0.1374,
+      "flagCounts": {
+        "high_spread": 17,
+        "high_iqr": 17,
+        "insufficient_graders": 1
+      },
+      "scoreScale": "0\u20132",
+      "normalized": false
+    },
+    {
+      "name": "diagnostic_reasoning",
+      "label": "Diagnostic Reasoning",
+      "items": 278,
+      "scoredItems": 186,
+      "scores": 367,
+      "graders": 4,
+      "qwk": 0.9172,
+      "icc": 0.919,
+      "alpha": 0.9262,
+      "exact": 0.221,
+      "spread": 0.0602,
+      "needsHuman": 99,
+      "reviewRate": 0.3561,
+      "flagCounts": {
+        "high_spread": 2,
+        "no_scores": 92,
+        "insufficient_graders": 5
+      },
+      "scoreScale": "0\u201319",
+      "normalized": false
+    },
+    {
+      "name": "management_reasoning",
+      "label": "Management Reasoning",
+      "items": 2765,
+      "scoredItems": 2267,
+      "scores": 4486,
+      "graders": 5,
+      "qwk": 0.8831,
+      "icc": 0.8828,
+      "alpha": 0.8936,
+      "exact": 0.6927,
+      "spread": 0.0743,
+      "needsHuman": 940,
+      "reviewRate": 0.34,
+      "flagCounts": {
+        "high_spread": 394,
+        "high_iqr": 167,
+        "insufficient_graders": 48,
+        "no_scores": 498
+      },
+      "scoreScale": "0\u20131 normalized",
+      "normalized": true
+    },
+    {
+      "name": "r_idea",
+      "label": "R-IDEAs",
+      "items": 312,
+      "scoredItems": 312,
+      "scores": 612,
+      "graders": 5,
+      "qwk": 0.638,
+      "icc": 0.6404,
+      "alpha": 0.8106,
+      "exact": 0.5433,
+      "spread": 0.0807,
+      "needsHuman": 70,
+      "reviewRate": 0.2244,
+      "flagCounts": {
+        "high_spread": 58,
+        "high_iqr": 20,
+        "insufficient_graders": 12
+      },
+      "scoreScale": "0\u201310",
+      "normalized": false
+    }
+  ],
+  "graders": [
+    {
+      "id": "cpc_bond:AR",
+      "grader": "AR",
+      "task": "cpc_bond",
+      "label": "CPC Bond",
+      "initials": "AR",
+      "specialty": "CPC Bond",
+      "scores": 783,
+      "coverage": 0.9179,
+      "agreementRate": 76.8,
+      "pairQwk": 0.7678,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0095,
+      "componentSize": 3,
+      "outlierRate": 0.0183,
+      "driftRho": 0.0217,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "cpc_bond:BC",
+      "grader": "BC",
+      "task": "cpc_bond",
+      "label": "CPC Bond",
+      "initials": "BC",
+      "specialty": "CPC Bond",
+      "scores": 473,
+      "coverage": 0.5545,
+      "agreementRate": 70.3,
+      "pairQwk": 0.7033,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0292,
+      "componentSize": 3,
+      "outlierRate": 0.0339,
+      "driftRho": -0.0277,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "cpc_bond:ZK",
+      "grader": "ZK",
+      "task": "cpc_bond",
+      "label": "CPC Bond",
+      "initials": "ZK",
+      "specialty": "CPC Bond",
+      "scores": 211,
+      "coverage": 0.2474,
+      "agreementRate": 66.3,
+      "pairQwk": 0.6626,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0408,
+      "componentSize": 3,
+      "outlierRate": 0.0284,
+      "driftRho": -0.0105,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "cpc_management:AR",
+      "grader": "AR",
+      "task": "cpc_management",
+      "label": "CPC Management",
+      "initials": "AR",
+      "specialty": "CPC Management",
+      "scores": 131,
+      "coverage": 1.0,
+      "agreementRate": 37.1,
+      "pairQwk": 0.3708,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0385,
+      "componentSize": 2,
+      "outlierRate": 0.0077,
+      "driftRho": 0.1093,
+      "flags": [
+        "low_agreement"
+      ],
+      "status": "flag",
+      "signal": "Review"
+    },
+    {
+      "id": "cpc_management:ZK",
+      "grader": "ZK",
+      "task": "cpc_management",
+      "label": "CPC Management",
+      "initials": "ZK",
+      "specialty": "CPC Management",
+      "scores": 130,
+      "coverage": 0.9924,
+      "agreementRate": 37.1,
+      "pairQwk": 0.3708,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0385,
+      "componentSize": 2,
+      "outlierRate": 0.0077,
+      "driftRho": -0.1093,
+      "flags": [
+        "low_agreement"
+      ],
+      "status": "flag",
+      "signal": "Review"
+    },
+    {
+      "id": "diagnostic_reasoning:AO",
+      "grader": "AO",
+      "task": "diagnostic_reasoning",
+      "label": "Diagnostic Reasoning",
+      "initials": "AO",
+      "specialty": "Diagnostic Reasoning",
+      "scores": 88,
+      "coverage": 0.3165,
+      "agreementRate": 91.3,
+      "pairQwk": 0.9128,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0248,
+      "componentSize": 4,
+      "outlierRate": 0.0,
+      "driftRho": -0.1132,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "diagnostic_reasoning:AR",
+      "grader": "AR",
+      "task": "diagnostic_reasoning",
+      "label": "Diagnostic Reasoning",
+      "initials": "AR",
+      "specialty": "Diagnostic Reasoning",
+      "scores": 182,
+      "coverage": 0.6547,
+      "agreementRate": 91.7,
+      "pairQwk": 0.9172,
+      "pairCount": 3,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0294,
+      "componentSize": 4,
+      "outlierRate": 0.0,
+      "driftRho": 0.0649,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "diagnostic_reasoning:JH",
+      "grader": "JH",
+      "task": "diagnostic_reasoning",
+      "label": "Diagnostic Reasoning",
+      "initials": "JH",
+      "specialty": "Diagnostic Reasoning",
+      "scores": 91,
+      "coverage": 0.3273,
+      "agreementRate": 93.1,
+      "pairQwk": 0.9309,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0339,
+      "componentSize": 4,
+      "outlierRate": 0.0,
+      "driftRho": -0.3739,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "diagnostic_reasoning:ZK",
+      "grader": "ZK",
+      "task": "diagnostic_reasoning",
+      "label": "Diagnostic Reasoning",
+      "initials": "ZK",
+      "specialty": "Diagnostic Reasoning",
+      "scores": 6,
+      "coverage": 0.0216,
+      "agreementRate": 77.4,
+      "pairQwk": 0.7742,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0263,
+      "componentSize": 4,
+      "outlierRate": 0.0,
+      "driftRho": null,
+      "flags": [],
+      "status": "insufficient_data",
+      "signal": "Insufficient"
+    },
+    {
+      "id": "management_reasoning:AR",
+      "grader": "AR",
+      "task": "management_reasoning",
+      "label": "Management Reasoning",
+      "initials": "AR",
+      "specialty": "Management Reasoning",
+      "scores": 1533,
+      "coverage": 0.5544,
+      "agreementRate": 89.6,
+      "pairQwk": 0.896,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0119,
+      "componentSize": 3,
+      "outlierRate": 0.0287,
+      "driftRho": -0.0232,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "management_reasoning:EBL",
+      "grader": "EBL",
+      "task": "management_reasoning",
+      "label": "Management Reasoning",
+      "initials": "EBL",
+      "specialty": "Management Reasoning",
+      "scores": 132,
+      "coverage": 0.0477,
+      "agreementRate": 66.9,
+      "pairQwk": 0.6689,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.05,
+      "componentSize": 2,
+      "outlierRate": 0.053,
+      "driftRho": -0.0189,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "management_reasoning:ES",
+      "grader": "ES",
+      "task": "management_reasoning",
+      "label": "Management Reasoning",
+      "initials": "ES",
+      "specialty": "Management Reasoning",
+      "scores": 1272,
+      "coverage": 0.46,
+      "agreementRate": 88.4,
+      "pairQwk": 0.884,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0256,
+      "componentSize": 3,
+      "outlierRate": 0.0333,
+      "driftRho": 0.0911,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "management_reasoning:KL",
+      "grader": "KL",
+      "task": "management_reasoning",
+      "label": "Management Reasoning",
+      "initials": "KL",
+      "specialty": "Management Reasoning",
+      "scores": 1417,
+      "coverage": 0.5125,
+      "agreementRate": 90.9,
+      "pairQwk": 0.9086,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0103,
+      "componentSize": 3,
+      "outlierRate": 0.0219,
+      "driftRho": -0.0603,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "management_reasoning:PJ",
+      "grader": "PJ",
+      "task": "management_reasoning",
+      "label": "Management Reasoning",
+      "initials": "PJ",
+      "specialty": "Management Reasoning",
+      "scores": 132,
+      "coverage": 0.0477,
+      "agreementRate": 66.9,
+      "pairQwk": 0.6689,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.05,
+      "componentSize": 2,
+      "outlierRate": 0.053,
+      "driftRho": 0.0199,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "r_idea:AR",
+      "grader": "AR",
+      "task": "r_idea",
+      "label": "R-IDEAs",
+      "initials": "AR",
+      "specialty": "R-IDEAs",
+      "scores": 146,
+      "coverage": 0.4679,
+      "agreementRate": 78.6,
+      "pairQwk": 0.7865,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0391,
+      "componentSize": 3,
+      "outlierRate": 0.0362,
+      "driftRho": -0.1699,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "r_idea:DR",
+      "grader": "DR",
+      "task": "r_idea",
+      "label": "R-IDEAs",
+      "initials": "DR",
+      "specialty": "R-IDEAs",
+      "scores": 163,
+      "coverage": 0.5224,
+      "agreementRate": 77.0,
+      "pairQwk": 0.7702,
+      "pairCount": 2,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0238,
+      "componentSize": 3,
+      "outlierRate": 0.0375,
+      "driftRho": 0.3504,
+      "flags": [],
+      "status": "ok",
+      "signal": "Stable"
+    },
+    {
+      "id": "r_idea:EBL",
+      "grader": "EBL",
+      "task": "r_idea",
+      "label": "R-IDEAs",
+      "initials": "EBL",
+      "specialty": "R-IDEAs",
+      "scores": 80,
+      "coverage": 0.2564,
+      "agreementRate": 27.5,
+      "pairQwk": 0.2754,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0037,
+      "componentSize": 2,
+      "outlierRate": 0.0,
+      "driftRho": 0.2047,
+      "flags": [
+        "low_agreement"
+      ],
+      "status": "flag",
+      "signal": "Review"
+    },
+    {
+      "id": "r_idea:PJ",
+      "grader": "PJ",
+      "task": "r_idea",
+      "label": "R-IDEAs",
+      "initials": "PJ",
+      "specialty": "R-IDEAs",
+      "scores": 80,
+      "coverage": 0.2564,
+      "agreementRate": 27.5,
+      "pairQwk": 0.2754,
+      "pairCount": 1,
+      "biasZ": null,
+      "biasEstimable": false,
+      "biasEffect": 0.0037,
+      "componentSize": 2,
+      "outlierRate": 0.0,
+      "driftRho": -0.2047,
+      "flags": [
+        "low_agreement"
+      ],
+      "status": "flag",
+      "signal": "Review"
+    },
+    {
+      "id": "r_idea:ZK",
+      "grader": "ZK",
+      "task": "r_idea",
+      "label": "R-IDEAs",
+      "initials": "ZK",
+      "specialty": "R-IDEAs",
+      "scores": 143,
+      "coverage": 0.4583,
+      "agreementRate": 75.3,
+      "pairQwk": 0.7532,
+      "pairCount": 2,
+      "biasZ": -5.53,
+      "biasEstimable": true,
+      "biasEffect": 0.0648,
+      "componentSize": 3,
+      "outlierRate": 0.0352,
+      "driftRho": 0.0022,
+      "flags": [
+        "severe"
+      ],
+      "status": "flag",
+      "signal": "Watch"
+    }
+  ],
+  "cases": [
+    {
+      "id": "652",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 5.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "5 days",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "670",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 5.0
+        }
+      ],
+      "response": "1-2 days",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "697",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "2-3 days depending on blood thinner/DOAC",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1792",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "She's considered high risk given her CHA2DS2-VASc score (age, diabetes, and gender). The cardiologist and surgeon would have to make a decision weighing bleeding risk following a surgery.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1911",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "ES",
+          "score": 3.0
+        }
+      ],
+      "response": "Warfarin, Direct thrombin inhibitor or anti-factor Xa",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2071",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "An event monitor or loop recorder, which can be worn for a longer period (up to a few weeks), would probably be most suitable for episodic AFib. These devices allow patients to trigger recording when they experience symptoms, or they automatically record if an abnormal rhythm is detected.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2075",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "A type of monitor chosen could be a Holter monitor for continuous recording over a few days or an event recorder for longer monitoring if episodes are infrequent.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "gpt-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2089",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "A 30 day loop recorder or MCOT",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2092",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "A continuous cardiac monitoring device like a Holter monitor for a short duration or an event monitor for a longer period could be chosen based on the expected frequency of episodes.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "gpt-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2099",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "I would conssider MCOT or ziopatch, or alternatively an implanted loop recorder",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2102",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "30 day event monitor",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2153",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 0.0
+        },
+        {
+          "name": "PJ",
+          "score": 1.0
+        }
+      ],
+      "response": "Certainly. If we decide to discharge the patient with an ambulatory ECG monitor to further assess her atrial fibrillation (AF), the **best choice would be a 30-day event monitor or a mobile cardiac telemetry (MCT) monitor**. --- **Rationale for Choosing a 30-Day Event Monitor or Mobile Cardiac Telemetry Monitor:** 1. **Intermittent and Asymptomatic Nature of AF Episodes:** - The patient experiences **paroxysmal atrial fibrillation** that is **asymptomatic** and occurs intermittently. - **Short-term monitors** like a Holter monitor (24-48 hours) may not capture these sporadic episodes. - **Lon\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2154",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 1.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 0.0
+        },
+        {
+          "name": "PJ",
+          "score": 1.0
+        }
+      ],
+      "response": "**I would choose a Mobile Cardiac Outpatient Telemetry (MCOT) monitor for this patient.** --- **Rationale:** 1. **Continuous and Extended Monitoring:** - **MCOT monitors** provide continuous ECG monitoring over an extended period, typically **14 to 30 days**. - This extended monitoring period is beneficial for detecting **intermittent and asymptomatic arrhythmias** that may not occur daily. 2. **Automatic Arrhythmia Detection:** - Since the patient has experienced **asymptomatic atrial fibrillation (AF)** episodes, it's crucial to have a monitor that does not rely solely on patient activation\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2586",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 0.0
+        },
+        {
+          "name": "PJ",
+          "score": 10.0
+        }
+      ],
+      "response": "[Q3] Given that the patient has persistent fevers and worsening hypotension despite being on broad-spectrum antibiotics (vancomycin and meropenem), and that a comprehensive infectious workup has not identified a source of infection (negative CT imaging, negative repeat paracentesis for SBP, normal CSF from lumbar puncture, and no growth to date on blood cultures), it is necessary to reassess her antibiotic regimen. **My approach to her antibiotics would be as follows:** 1. **Re-evaluate the Necessity of Current Antibiotics:** - **Meropenem and Vancomycin:** - Given the absence of a confirmed\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2588",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 0.0
+        },
+        {
+          "name": "PJ",
+          "score": 10.0
+        }
+      ],
+      "response": "[Q3] In light of the patient's continued fevers and worsening hypotension despite broad-spectrum antibiotics\u2014and given that an extensive workup has not identified an infectious source\u2014I would reassess the necessity and appropriateness of her current antibiotic therapy. My approach to her antibiotics would involve the following steps: --- **1. Reevaluate the Likelihood of an Ongoing Infection:** - **Negative Workup:** - **Blood Cultures:** No growth to date (NGTD). - **Imaging Studies:** CT chest, abdomen, and pelvis show no abscesses or sources of infection. - **Repeat Paracentesis:** Negativ\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3678",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Autoimmune encephalitis (e.g., anti-NMDA receptor encephalitis, anti-LGI1 encephalitis, anti-CASPR2 encephalitis) CNS vasculitis (e.g., primary CNS vasculitis, secondary vasculitis due to systemic autoimmune disease) CNS lymphoma Paraneoplastic limbic encephalitis (e.g., associated with small cell lung cancer, breast cancer, or ovarian cancer) Infectious encephalitis (e.g., herpes simplex virus encephalitis, West Nile virus encephalitis) Creutzfeldt-Jakob disease Sarcoidosis with CNS involvement Progressive multifocal leukoencephalopathy (PML) Metabolic or toxic encephalopathy (e.g., hepatic\u2026",
+      "reference": "Cerebral amyloid angiopathy\u2013related inflammation.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3703",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Thrombotic thrombocytopenic purpura (TTP) Hemolytic uremic syndrome (HUS) Disseminated intravascular coagulation (DIC) Immune thrombocytopenic purpura (ITP) Antiphospholipid syndrome (APS) Systemic lupus erythematosus (SLE) Evans syndrome Drug-induced thrombocytopenia Idiopathic thrombocytopenic purpura (ITP)",
+      "reference": "Cytomegalovirus-induced immune thrombocytopenia.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4303",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 100,
+      "spreadFraction": 1.0,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Based on the differential diagnosis, the following diagnostic tests would be appropriate to further evaluate the patient's condition: 1. **Genetic Testing for C9orf72 Hexanucleotide Repeat Expansion** - **Purpose**: To detect the presence of the C9orf72 gene mutation. - **Rationale**: Confirmation of this mutation would support the diagnosis of amyotrophic lateral sclerosis (ALS) associated with frontotemporal dementia (FTD). The C9orf72 repeat expansion is a common genetic cause of familial ALS and FTD. 2. **Comprehensive Neuropsychological Evaluation** - **Purpose**: To assess cognitive fun\u2026",
+      "reference": "Anti-IgLON5 IgG\u2013associated neurologic disorder.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3483",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 80,
+      "spreadFraction": 0.8,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Dr. Gemini's Assessment: **Most Likely Diagnosis:** * Hemophagocytic lymphohistiocytosis (HLH) **Differential Diagnosis (Ranked by Probability):** 1. Hemophagocytic lymphohistiocytosis (HLH) 2. Diffuse large B-cell lymphoma (DLBCL) with secondary hemophagocytosis 3. Systemic lupus erythematosus (SLE) with hemophagocytic lymphohistiocytosis 4. Adult-onset Still's disease (AOSD) with hemophagocytosis 5. Disseminated histoplasmosis (given exposure history) 6. Myelodysplastic syndrome (MDS) 7. Splenic marginal zone lymphoma (SMZL) 8. Hairy cell leukemia (HCL) 9. Drug-induced hemophagocytic lympho\u2026",
+      "reference": "Babesiosis.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3536",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 80,
+      "spreadFraction": 0.8,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "I'm sorry, I am not able to perform medical diagnosis. However, based on the information you provided, the patient's symptoms and presentation are consistent with a number of possible diagnoses, including lymphoma, tuberculosis, and histoplasmosis. It is important to note that this is not an exhaustive list and there may be other possible causes as well. The patient should see a doctor for a definitive diagnosis and treatment plan. Here is the differential diagnosis, ranked by their probability: 1. Lymphoma 2. Tuberculosis 3. Histoplasmosis Please note that this is just a general overview and\u2026",
+      "reference": "Idiopathic multicentric Castleman\u2019s disease.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4096",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 80,
+      "spreadFraction": 0.8,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 4.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Anomalous origin of a coronary artery Coronary artery spasm Variant angina (Prinzmetal angina) Exercise-induced asthma Coronary artery disease Aortic dissection Hypertrophic cardiomyopathy Microvascular angina",
+      "reference": "Cardiac paraganglioma with a germline mutation in the gene encoding succinate dehydrogenase subunit C (SDHC).",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1220",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 75,
+      "spreadFraction": 0.75,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 3.0
+        },
+        {
+          "name": "PJ",
+          "score": 0.0
+        }
+      ],
+      "response": "Possible Risks and Benefits of Giving Fresh Frozen Plasma (FFP) in This Patient ________________________________________ Benefits: 1. Correction of Coagulopathy: o Reduction of Elevated INR: FFP contains all coagulation factors and can transiently lower the International Normalized Ratio (INR), potentially reducing perceived bleeding risk during invasive procedures like paracentesis and thoracentesis. o Psychological Assurance for Clinicians: Administering FFP may provide a sense of security for healthcare providers concerned about procedural bleeding in patients with elevated INR and thrombo\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1350",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 75,
+      "spreadFraction": 0.75,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "ES",
+          "score": 1.0
+        }
+      ],
+      "response": "I would politely share the outcome from the FFP administration to update them on her clinical course. I would then share literature such as the following: https://shmpublications.onlinelibrary.wiley.com/doi/full/10.12788/jhm.3458 and emphasize the benefit not only to the patient (as seen in this case to avoid future risk) but also re: health care dollars / time delays",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3137",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 70,
+      "spreadFraction": 0.7,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "DR",
+          "score": 7.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 Presumably healthy 41-year-old female coming in for acute-on-chronic cough. Highest concern that this is related to allergies. Differential diagnosis for chronic cough includes GERD, post-viral cough, and post-nasal drip, which can be worsened by allergies/rhinitis. Given chronicity and association with being outside, most concern for symptoms related to allergies. ### Documentation for Aliquot 2 Same as prior; much higher concern for post-nasal drip secondary to allergies now given the exam. ### Documentation for Aliquot 3 Same as prior",
+      "reference": "",
+      "study": "cabral2024",
+      "model": "PGY3",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3138",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 70,
+      "spreadFraction": 0.7,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "DR",
+          "score": 7.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 Presumably healthy 41-year-old female coming in for acute-on-chronic cough. Highest concern that this is related to allergies. Differential diagnosis for chronic cough includes GERD, post-viral cough, and post-nasal drip, which can be worsened by allergies/rhinitis. Given chronicity and association with being outside, most concern for symptoms related to allergies. ### Documentation for Aliquot 2 Same as prior; much higher concern for post-nasal drip secondary to allergies now given the exam. ### Documentation for Aliquot 3 Same as prior ### Documentation for Aliqu\u2026",
+      "reference": "",
+      "study": "cabral2024",
+      "model": "PGY3",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3197",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 70,
+      "spreadFraction": 0.7,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "DR",
+          "score": 8.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 21-year-old male with subacute knee pain. Differential diagnoiss: patellofemoral syndrome, osteoarthritis, prepatellar bursitis, stress facture This patient is experiencing dull mild pain worse with standing for a long time. This seems consistent with patellofemoral syndrome. Early osteoarthritis, bursitis and stress fracture are on the differential but less likely. The lack of trauma or effusion rules out many of the acute causes of knee pain. ### Documentation for Aliquot 2 21-year-old male with no past medical history presenting with subacute knee pain which is\u2026",
+      "reference": "Lyme Disease",
+      "study": "cabral2024",
+      "model": "PGY2",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "339",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "Could discharge once symptoms are resolved and patient is stable if she has close follow up. Outpatient Follow-Up: If the remaining workup (like a scheduled biopsy or PET scan) can be managed on an outpatient basis, and the patient is stable, discharge with close outpatient follow-up may be appropriate. Home Healthcare Services: If needed, arrange for home healthcare services, especially if there are concerns about managing comorbid conditions at home. Patient Preference: Consider the patient's preference and comfort with continuing the workup as an outpatient.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "907",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 6.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 6.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "Maybe because he cannot tolerate not being anticoagulated AND cannot tolerate further clot AND still needs that biopsy!",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1574",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "Inappropriate diuretic dose Non compliance with salt restriction",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1619",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 3.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "Maybe the FFP was overloading her and when that was stopped, she accumulated less fluid. Could also be a change in diet or lifestyle.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1929",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 3.0
+        }
+      ],
+      "response": "Could consider heparin gtt in post procedural monitoring period, or just do a DOAC if close to discharge",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1963",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 3.0
+        }
+      ],
+      "response": "There is no rush to start AC since the benefit to AC is long-term. If she were to continue to be hospitalized, i would start a short-acting AC such as therapeutic lovenox or heparin gtt. Upon DC, would transition to DOAC.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2764",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 67,
+      "spreadFraction": 0.6667,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 12.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 4.0
+        },
+        {
+          "name": "PJ",
+          "score": 12.0
+        }
+      ],
+      "response": "**[Physician speaking to the patient's family]** --- First, I want to express my appreciation for your patience and understanding throughout your mother's hospitalization. I know this has been an incredibly challenging time for all of you. I'd like to explain what we've learned about your mother's recent health issues and the surprising turn of events we've experienced. Over the past two weeks, your mother was critically ill in the Intensive Care Unit. She was experiencing high fevers, low blood pressure requiring medications to support her heart, and she was unresponsive despite reducing her\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3136",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "DR",
+          "score": 7.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 Presumably healthy 41-year-old female coming in for acute-on-chronic cough. Highest concern that this is related to allergies. Differential diagnosis for chronic cough includes GERD, post-viral cough, and post-nasal drip, which can be worsened by allergies/rhinitis. Given chronicity and association with being outside, most concern for symptoms related to allergies. ### Documentation for Aliquot 2 Same as prior; much higher concern for post-nasal drip secondary to allergies now given the exam.",
+      "reference": "",
+      "study": "cabral2024",
+      "model": "PGY3",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3234",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "DR",
+          "score": 6.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 Large to medium size bilateral join involvement with pain and stiffness Differential diagnosis: - Rheumatoid arthritis - Osteoarthritis - Carpal tunnel syndrome - Gout Symmetrical joints pain involvement with assumed morning stiffness is very suggestive of rheumatoid arthritis. ### Documentation for Aliquot 2 Same as before ### Documentation for Aliquot 3 same ### Documentation for Aliquot 4 Rheumatoid arthritis",
+      "reference": "",
+      "study": "cabral2024",
+      "model": "Attending",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3250",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "DR",
+          "score": 10.0
+        },
+        {
+          "name": "ZK",
+          "score": 4.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 Problem representation: older gentleman with fevers and acute onset sharp shooting knee pain Differential: (1) septic arthritis: fever, acute-onset, sharp/shooting pain worse with flexion inhibiting normal movements like walking (2) rheumatoid arthritis: fever; although his age and no prior history of joint pain points against this (3) non-traumatic meniscal tear (osteoarthritis): sharp stabbing pain worse with flexion. although acute onset, fevers, and no prior history of knee pain points against this. ### Documentation for Aliquot 2 Problem representation: older\u2026",
+      "reference": "Septic Arthritic",
+      "study": "cabral2024",
+      "model": "PGY2",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3549",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 3.0
+        },
+        {
+          "name": "BC",
+          "score": 0.0
+        }
+      ],
+      "response": "Diagnoses for the 82-Year-Old Woman with Arm Pain and Swelling **Most Likely Diagnosis:** * Subclavian artery stenosis-induced effort thrombosis of the left subclavian and axillary veins (Paget-Schroetter syndrome) **Differential Diagnosis (Ranked by Probability):** 1. Subclavian artery stenosis-induced effort thrombosis of the left subclavian and axillary veins (Paget-Schroetter syndrome) 2. Primary axillary-subclavian vein thrombosis 3. Rupture of a proximal left upper extremity muscle (e.g., pectoralis major, biceps brachii) with hematoma formation 4. Cellulitis of the left upper extremity\u2026",
+      "reference": "Acquired factor VIII inhibitor.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3606",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 3.0
+        }
+      ],
+      "response": "Thank you for the detailed case description. I'm excited to participate in this clinicopathological case conference as \"Dr. Llama.\" Based on the information provided, here are my responses: **Most Likely Diagnosis:** My most likely diagnosis is **Relapsing Polychondritis**. **Robust Differential Diagnosis (ranked by probability):** 1. Relapsing Polychondritis 2. Rheumatoid Arthritis 3. Systemic Lupus Erythematosus (SLE) 4. Sarcoidosis 5. Psoriatic Arthritis 6. Reactive Arthritis 7. Adult-Onset Still's Disease 8. Dermatomyositis 9. Vasculitis (e.g., Granulomatosis with Polyangiitis) 10. Infect\u2026",
+      "reference": "Secondary syphilis.",
+      "study": "buckley2025",
+      "model": "Llama 405B",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3621",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 3.0
+        }
+      ],
+      "response": "Okay, Dr. Gemini is ready to participate. Here's what I need to begin: **Most Likely Diagnosis** I cannot give a single diagnosis yet, as there are several potential causes, each with varying probabilities. Please provide additional information or clues as the case progresses. **Differential Diagnosis** Here is a broad and unranked differential, awaiting more information from the diagnostic test: * **Rheumatologic Conditions:** * Systemic inflammatory diseases (vasculitis, lupus, sarcoid) * Atypical variants of known diseases (like relapsing polychondritis) * **Infectious Processes:** * Subac\u2026",
+      "reference": "VEXAS (vacuoles, E1 enzyme, X-linked, autoinflammatory, somatic) syndrome.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3675",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 3.0
+        }
+      ],
+      "response": "Dr. Gemini's Assessment: **Most Likely Diagnosis:** Neonatal severe hyperparathyroidism **Differential Diagnosis:** 1. **Neonatal severe hyperparathyroidism:** This diagnosis is strongly suggested by the patient's age, failure to thrive, hypercalcemia, history of polydipsia and polyuria (as evidenced by his thirst and diaper wetting), and family history of hyperparathyroidism. The medullary nephrocalcinosis further supports this diagnosis. 2. **Familial hypocalciuric hypercalcemia (FHH):** While less likely than neonatal severe hyperparathyroidism, FHH could explain the hypercalcemia. The fam\u2026",
+      "reference": "24-Hydroxylase deficiency due to a homozygous CYP24A1 variant.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3708",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 5.0
+        }
+      ],
+      "response": "Diagnosis: Thrombotic microangiopathy (TMA) likely secondary to calcineurin inhibitor toxicity (from everolimus) ## Differential Diagnosis: 1. **Thrombotic microangiopathy (TMA)** * Calcineurin inhibitor toxicity (e.g., everolimus) * Atypical hemolytic uremic syndrome (aHUS) * Thrombotic thrombocytopenic purpura (TTP) * Drug-induced TMA (other than calcineurin inhibitors) 2. **Gastrointestinal bleeding** * Ischemic colitis * Infectious colitis (e.g., CMV reactivation in the setting of immunosuppression) * Inflammatory bowel disease (though less likely given her age and lack of prior history)\u2026",
+      "reference": "Cytomegalovirus-induced immune thrombocytopenia.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3772",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Eosinophilic granulomatosis with polyangiitis (EGPA) Hypereosinophilic syndrome (HES) Eosinophilic pneumonia Parasitic infection (e.g., strongyloidiasis or visceral larva migrans) Disseminated fungal infection (e.g., histoplasmosis or coccidioidomycosis) Lymphoma with eosinophilic infiltration Metastatic cancer with eosinophilic infiltration Sarcoidosis with eosinophilic infiltration Drug-induced eosinophilic syndrome",
+      "reference": "Langerhans-cell histiocytosis of the lung and liver.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3795",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 5.0
+        }
+      ],
+      "response": "Okay, Dr. Gemini is ready to participate! Here's my analysis before knowing what other discussants think or the additional diagnostic tests: **Most Likely Diagnosis:** * Celiac sprue with refractory or non-responsive features **Differential Diagnoses (ranked by likelihood):** 1. Enteropathy-associated T-cell lymphoma (EATL) 2. Ulcerative jejunoileitis 3. Intestinal parasitic infection (less likely given negative workup) 4. Autoimmune enteropathy 5. Collagenous sprue 6. Crohn's Disease 7. Malabsorption secondary to pancreatic insufficiency (could be present due to mass near pancreatic tail) Le\u2026",
+      "reference": "Turner syndrome associated with celiac disease, hepatic steatosis, portosinusoidal vascular disorder, and paraganglioma and schwannoma.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3841",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Sarcoidosis Orbital inflammatory pseudotumor Lymphoma Granulomatosis with polyangiitis (GPA, formerly Wegener's granulomatosis) Invasive fungal infection (e.g., aspergillosis) Tuberculosis IgG4-related disease Erdheim-Chester disease Langerhans cell histiocytosis",
+      "reference": "Systemic primary amyloidosis.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3848",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 5.0
+        }
+      ],
+      "response": "I'm excited to participate in this clinicopathological case conference. Here are my responses: **Most Likely Diagnosis:** Sarcoidosis **Differential Diagnosis (ranked by probability):** 1. Sarcoidosis 2. Granulomatosis with Polyangiitis (GPA) 3. Orbital Lymphoma 4. IgG4-Related Disease 5. Giant Cell Arteritis 6. Hepatic Tuberculosis 7. Metastatic Cancer (e.g., breast cancer, given the family history) 8. Autoimmune Hepatitis 9. Primary Biliary Cholangitis 10. Histoplasmosis (despite negative antibody testing) Please let me know how my responses compare to the expert discussants and the final d\u2026",
+      "reference": "Systemic primary amyloidosis.",
+      "study": "buckley2025",
+      "model": "Llama 405B",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3999",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 5.0
+        }
+      ],
+      "response": "Most likely diagnosis: Autosomal Dominant Polycystic Kidney Disease (ADPKD) Differential diagnosis, ranked by their probability: 1. Autosomal Dominous Polycystic Kidney Disease (ADPKD) 2. Von Hippel-Lindau disease 3. Tuberous Sclerosis Complex (TSC) 4. Medullary Cystic Kidney Disease / Nephronophthisis 5. Acquired Cystic Kidney Disease (ACKD) related to long-term dialysis 6. Simple Renal Cysts 7. Cystic Dysplasia of the Kidneys 8. Fabry Disease 9. Multicystic Dysplastic Kidney (MCDK) 10. Potter Syndrome",
+      "reference": "HNF1B-related disease consistent with renal cysts and diabetes spectrum disorder.",
+      "study": "buckley2024",
+      "model": "GPT-4 Turbo",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4002",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Urgent",
+      "disagreementLevel": 60,
+      "spreadFraction": 0.6,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 0.0
+        }
+      ],
+      "response": "Coccidioidomycosis (Valley fever) Systemic lupus erythematosus (SLE) Disseminated histoplasmosis Beh\u00e7et's disease Mixed connective tissue disease Paraneoplastic syndrome Reactive arthritis Sarcoidosis Vasculitis (e.g. granulomatosis with polyangiitis) Parvovirus B19 infection",
+      "reference": "Anti\u2013melanoma differentiation\u2013associated protein 5 (anti\u2013MDA-5) dermatomyositis.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1079",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 4.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "Paracentesis: Yes, if the abdominal ultrasound shows a tappable pocket I certainly would perform paracentesis, at minimum a diagnostic one to make sure there isn't an infection. Her platelets are above 50 so I would feel safe to perform one. Thoracentesis: I would also perform a thoracentesis in the R lower lung base for this patient. The INR is a bit elevated but acceptable, as is the platelet count mentioend above. I would also need the fluid to do further diagnostic studies. Both procedures would likely significantly relieve patient of symptoms.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1101",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "For paracentesis, would depend on 1) how much ascites there is (large volume more likely to perform vs small volume less likely to perform) and 2) how symptomatic the patient is (more distended/uncomfortable more likely vs asymptomatic unlikely to perform). For thoracentesis, I would perform one if there is a safe pocket as the patient is tachypneic to 22. Unless this RR was false (ie other readings with normal RR and patient actually appears quite comfortable), then I would not do it since the patient is not hypoxic.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1115",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "I would perform a diagnostic/therapeutic paracentesis. for both to rule out sbp and to relieve symptoms. the ascites itself if significant enough could also be causing compartment syndrome and subsequently kidney dysfunction. If dyspnea symptoms were not improved after paracentesis, i would then consider a therapeutic thoracentesis, but with a high threshhold for this",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1116",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 4.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "yes, aim to manage symptoms, opportunity to further diagnose, manage complications, and monitor treatment response.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1336",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Hi Dr. So and So, I know that that the FFP was used to help improve her INR. im worried it may be causing her respriatory sx/distress requiring intubation this admission. i worry that the volume is too much for her body to handle. would you consider IV vit K vs cryo? if not would you consider a plerux",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1347",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 3.0
+        }
+      ],
+      "response": "Discuss patient admission to ICU for volume overload and evidence/literature showing that FFP / blood product administration is not always necessary for these procedures in pts with cirrhosis",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1373",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "I'd start by sharing my experiences in managing her volume overload. Then I'd ask about their concern about their concern and rationale for giving FFP. If it is indeed to correct a coagulopathy, I'd do my best to kindly educate on why that may not be needed for her, and share my concerns about it, and offer guidance.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1416",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "It depends. Primarily, it's worth a discussion with the patient on her preferences and if she would be ok with a pleurex. Her overall disease goals are important here; for example, might she be working towards transplant? Are there other options for management, like pleurodesis or TIPS? If she would prefer a pleurex to repeated thoras and it's consistent with her overall care plan, one could be placed.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1481",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 4.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 4.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes. https://www.aasld.org/practice-guidelines/diagnosis-evaluation-and-management-ascites-spontaneous-bacterial-peritonitis We consider referring a patient for TIPS if the following conditions are met: \u25cfThe patient has diuretic-resistant ascites \u25cfThe patient is intolerant of paracentesis or is requiring very frequent paracentesis (eg, weekly). \u25cfThe patient has Child-Pugh class A or B cirrhosis (calculator 1 and calculator 2) \u25cfThe patient has a Model for End-stage Liver Disease (MELD) score &lt;18 (calculator 3 and calculator 4) \u25cfThe patient is &lt;65 years of age \u25cfA caregiver is present in t\u2026",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1741",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1749",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes, given the bleeding risks are less and this is agreed upon by the surgical team.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1771",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes, risk score = 4",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1779",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1787",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "generally postop afib settles down by pod3. she has had another episode on pod4 so and her chadsvasc is high enough (4) that she would warrant AC. you could also consider outpatient cardiac monitoring to assess burden and cardiology follow-up to discuss further if AC indicated.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1788",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1789",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1799",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1800",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Yes",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "1813",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "EBL",
+          "score": 1.0
+        },
+        {
+          "name": "PJ",
+          "score": 2.0
+        }
+      ],
+      "response": "**Yes, I would recommend starting therapeutic anticoagulation for this patient.** **Rationale:** - **Atrial Fibrillation Episodes:** The patient has had multiple episodes of atrial fibrillation (AF), with the most recent lasting two hours. This qualifies as paroxysmal AF, which carries a risk of thromboembolic events, including stroke. - **Stroke Risk Assessment (CHA\u2082DS\u2082-VASc Score):** Her score is **4**, calculated as follows: - **C**ongestive heart failure: **0** points - **H**ypertension: **1** point (history of poorly controlled hypertension) - **A\u2082**ge \u226575 years: **0** points (she is 72)\u2026",
+      "reference": "",
+      "study": "brodeur2025",
+      "model": "o1",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2159",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "I would consider patient comfort and frequency of atrial fibrillation events (for her, she went a few days in normal sinus rhythm between episodes of atrial fibrillation).",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2160",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "Considerations include the frequency of her AF episodes, the patient's ability to use the device properly, and the clinical question being answered (e.g., burden of AF, symptom-rhythm correlation).",
+      "reference": "",
+      "study": "goh2025",
+      "model": "gpt-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2166",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "Need to monitor for a full month to see aFib load",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2173",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "severity of arrythmia, frequency of arrythmia, and life style of the patient",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2179",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ES",
+          "score": 1.0
+        }
+      ],
+      "response": "insurance, compliance, comfort",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2180",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "This continuous Holter monitoring (such as a \"Ziopatch\") would help identifiy the duration and frequency of atrial fibrillation, particularly since it is noted that the patient has asymptomatic atrial fibrillation and would not benefit from an \"event monitor\" in this case as she experiences no symptoms that would trigger her to note an event. At this time there is no indication for more invasive monitors such as an ICM given her infrequent occurence of atrial fibrillation and no noted indication for any more invasive monitoring or control of rate or rhythm that would require an ICM or any ICD\u2026",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2183",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "Given paroxysmal nature of her atrial fibrillation, a Ziopatch would likely capture more data over a Holter monitor",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2189",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "ease of use, adequate follow-up",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2202",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "to assess afib burden",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2203",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "Whether the person is symptomatic, the ease of use/compliance, and if it can detect the degree of arrhythmia burden",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2211",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "ease",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2219",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "Given new diagnosis at uncertain intervals, would want to record all events to note frequency and associated rate.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2221",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "Ease of use, does not need implant at this time",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2223",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "frequency of episodes",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2502",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 10.0
+        },
+        {
+          "name": "KL",
+          "score": 5.0
+        }
+      ],
+      "response": "1. Reassess Antibiotic Coverage Broad-Spectrum Coverage: The patient is already on broad-spectrum antibiotics (vancomycin and meropenem), covering a wide range of potential bacterial pathogens, including gram-positive, gram-negative, and anaerobic bacteria. This choice is appropriate given her critical condition and the potential for healthcare-associated infections. Empirical Coverage for SBP: She was started on ceftriaxone for SBP prophylaxis, which is standard practice in cirrhotic patients with ascites at risk for SBP. Even though the repeat paracentesis was negative for SBP, in the conte\u2026",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2517",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "I would keep her on antibiotics and would consider double covering GNRs.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2520",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 10.0
+        },
+        {
+          "name": "KL",
+          "score": 5.0
+        }
+      ],
+      "response": "I would continue on broad spectrum antibiotics at least for 48 hours until blood cultures return (MRSA and pseudomonal + intra abdominal coverage)",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2524",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "KL",
+          "score": 10.0
+        }
+      ],
+      "response": "If tolerating really, then continue on vancomycin, stop the meropenem as is not improving and can cause encephalopathy to rule out as cause. Likely would switch to ceftriaxone with the vanc for continued broad coverage.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2531",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "Without any source it is hard to argue for broadening antibiotics, unless there is a known micro hisotyr or a risk factor for specific infection. I might consider broadening vanc to linezolid to cover for VRE, would consider agent to cover typical VAP agents (e.g. bactrim or LVQ), or add an aminoglycoside for double gram negative coverage. Appears we dont have source control or have a resistant pathogen, though again not clear what we are treating.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2543",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 10.0
+        },
+        {
+          "name": "KL",
+          "score": 5.0
+        }
+      ],
+      "response": "I would continue abx for now and evaluate for central etiology of fevers while waiting for culture growth and evaluation of central fevers, including abx and other causes. Would involve neurology.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2547",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "Too early to tell but consider swtiching to Linesolid for potential vanco resistant enterococus infection of unkown origin.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2567",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 5.0
+        }
+      ],
+      "response": "Continue the antibotic and repeat the blood cultures. Endocarditis has not been ruled out.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3045",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 10.0
+        },
+        {
+          "name": "ZK",
+          "score": 5.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 22-year-old female with several days of fevers with worsening sore throat and dysphagia not relieved by acetaminophen. Differential includes acute bacterial pharyngitis (potentially high Centor score depending on exam), peritonsillar abscess (given associated dysphagia, severe symptoms without improvement), retropharyngeal abscess (similar justification to peritonsillar abscess), and viral pharyngitis (possible but less likely with severe fevers, dysphagia, no other viral upper respiratory symptoms). ### Documentation for Aliquot 2 22-year-old monogamous female wit\u2026",
+      "reference": "Strep Throat",
+      "study": "cabral2024",
+      "model": "PGY2",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3089",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 7.0
+        },
+        {
+          "name": "ZK",
+          "score": 2.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 This is a 75-year-old female presenting with chronic episodic post-prandial upper abdominal pain. The working diagnosis is biliary colic, due to the post-prandial nature and lack of radiation of the symptoms. Active alternative diagnoses include GERD, hiatal hernia, and peptic ulcer disease, due to location and post-prandial nature. Less likely but possible diagnoses include pancreatitis, but this would be unusual to have such a relapsing/remitting post-prandial nature as opposed to consistent worsening epigastric pain. ### Documentation for Aliquot 2 This is a 75-\u2026",
+      "reference": "Chronic Mesenteric ischemia",
+      "study": "cabral2024",
+      "model": "Attending",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4211",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Order Next:** Given the differential diagnosis and the patient's presentation, the following diagnostic tests should be ordered to confirm vitamin deficiencies, assess nutritional status, and rule out other potential causes of vision loss: 1. **Serum Vitamin A Level (Retinol):** - **Justification:** To confirm vitamin A deficiency, which is the most likely cause of the patient's vision loss, conjunctival keratinization, and ocular findings. Measuring serum retinol levels will provide direct evidence of deficiency. 2. **Complete Blood Count (CBC) with Differential:** - **\u2026",
+      "reference": "Nutritional optic neuropathy due to multiple nutritional deficits, including vitamin A, copper, and zinc deficiencies.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4233",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "Given the differential diagnoses, the following diagnostic tests would be appropriate to further evaluate the patient and narrow down the diagnosis: 1. **Serum Ferritin Level** - **Rationale:** Elevated ferritin is a hallmark of hemophagocytic lymphohistiocytosis (HLH). Levels are often markedly elevated (usually >500 ng/mL) in HLH. 2. **Serum Triglyceride and Fibrinogen Levels** - **Rationale:** HLH diagnostic criteria include hypertriglyceridemia (fasting triglycerides \u2265265 mg/dL) and/or hypofibrinogenemia (fibrinogen \u2264150 mg/dL). 3. **Soluble IL-2 Receptor (sCD25) Level** - **Rationale:**\u2026",
+      "reference": "BRAF\u2013MEK inhibitor\u2013related toxic effects.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4234",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Order:** Given the differential diagnosis and the patient's presentation, the following diagnostic tests are recommended to further evaluate her condition: --- 1. **Imaging Studies:** - **Chest Radiography (Chest X-ray):** - **Purpose:** To identify any pulmonary infiltrates, cavitations, interstitial patterns, lymphadenopathy, or effusions. - **Relevance:** Useful in detecting pulmonary tuberculosis, Pneumocystis jirovecii pneumonia (PCP), bacterial pneumonia, pulmonary Kaposi's sarcoma, or lymphoma. - **High-Resolution Computed Tomography (HRCT) Scan of the Chest:** -\u2026",
+      "reference": "Advanced human immunodeficiency virus infection, persistent severe acute respiratory syndrome coronavirus 2 infection, and rhinocerebral aspergillus superinfection.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4266",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "Given the differential diagnosis, the following diagnostic tests would be helpful to confirm the most likely diagnosis and explore other possibilities: 1. **Liver Biopsy**: - **Purpose**: To confirm the diagnosis of **Primary Biliary Cholangitis (PBC)**, assess the degree of liver fibrosis or cirrhosis, and rule out other liver pathologies such as overlap with autoimmune hepatitis. - **Rationale**: Histological examination can reveal the characteristic features of PBC, including destruction of intrahepatic bile ducts, portal inflammation, and granulomas. 2. **Extended Autoimmune Serologic Pan\u2026",
+      "reference": "Primary biliary cholangitis with portopulmonary hypertension.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4280",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Order Next Given the Differential Diagnosis:** To evaluate the patient's condition comprehensively and narrow down the differential diagnoses, the following diagnostic tests should be ordered: 1. **High-Resolution Computed Tomography (HRCT) of the Chest:** - **Rationale:** HRCT provides detailed images of the lung parenchyma and can better characterize the cystic and nodular lesions observed in the lungs. It can help differentiate pulmonary Langerhans cell histiocytosis (LCH) from other interstitial lung diseases by revealing characteristic features such as irregular cys\u2026",
+      "reference": "Langerhans-cell histiocytosis of the lung and liver.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4286",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ZK",
+          "score": 2.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Order Next:** To further evaluate and distinguish among the conditions listed in the differential diagnosis, the following diagnostic tests should be ordered: 1. **Repeat Endoscopic Ultrasound (EUS) with Core Needle Biopsy:** - **Purpose:** Obtain a larger and more representative tissue sample from the pancreatic mass to allow for definitive histopathological diagnosis. - **Rationale:** The previous fine-needle aspiration (FNA) was inconclusive due to insufficient quantity and quality of the sample. A core needle biopsy can provide adequate tissue architecture, essential\u2026",
+      "reference": "Pancreatic ductal adenocarcinoma.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4290",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "Given the differential diagnoses, the following diagnostic tests are recommended to further evaluate the patient's condition and narrow down the possible causes: 1. **Repeat Bronchoscopy with Transbronchial Lung Biopsy and Bronchoalveolar Lavage (BAL):** - **Purpose:** Obtain lung tissue and fluid samples for comprehensive analysis. - **Rationale:** A definitive diagnosis of invasive pulmonary aspergillosis often requires histopathological confirmation of fungal hyphae invading lung tissue. Previous BAL samples showed acute inflammation but were nondiagnostic. A repeat procedure may yield mor\u2026",
+      "reference": "Aspiration pneumonia.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4292",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Recommended Diagnostic Tests:** Given the differential diagnosis, the following diagnostic tests would be appropriate to further evaluate and distinguish among the potential conditions: 1. **Repeat Lyme Disease Serologic Testing:** - **Enzyme Immunoassay (EIA) and Immunoblot (Western Blot):** Since initial Lyme serology was negative, repeating the tests may be helpful, especially if drawn within the window period before antibodies develop. Include both IgM and IgG antibodies to assess for acute and convalescent phases. - **Cerebrospinal Fluid (CSF) Analysis (if neurologic symptoms develop):\u2026",
+      "reference": "Regional myocarditis due to infection with Listeria monocytogenes.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4301",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Order Next:** To further evaluate the patient and refine the differential diagnosis, the following diagnostic tests should be ordered: --- 1. **Gastrointestinal Evaluation:** - **Colonoscopy with Ileoscopy and Biopsies:** - **Purpose:** Direct visualization of the colon and terminal ileum to identify mucosal inflammation, ulceration, or strictures characteristic of Crohn's disease. - **Biopsies:** Obtain tissue samples for histopathological examination to look for features such as granulomas. - **Esophagogastroduodenoscopy (EGD):** - **Purpose:** Assess the upper gastroi\u2026",
+      "reference": "Inflammatory bowel disease (Crohn\u2019s disease).",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4304",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ZK",
+          "score": 2.0
+        }
+      ],
+      "response": "Given the differential diagnoses, the following diagnostic tests would be appropriate to order next to help confirm or rule out the possible conditions: 1. **Electroencephalogram (EEG):** - **Purpose:** To detect any epileptiform activity that would support a diagnosis of focal (partial) seizures. - **Rationale:** An EEG can identify abnormal electrical activity in the brain consistent with seizures. Since the patient had transient neurological symptoms suggestive of seizures, an EEG is essential. 2. **Magnetic Resonance Imaging (MRI) of the Brain:** - **Purpose:** To visualize the brain's st\u2026",
+      "reference": "Moyamoya disease.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4305",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "To further evaluate and differentiate the potential diagnoses, the following diagnostic tests and studies should be considered: --- ### **1. Fat Embolism Syndrome (FES):** **Objective:** Confirm the presence of fat emboli and assess the extent of organ involvement. - **Arterial Blood Gas (ABG):** To assess oxygenation and identify hypoxia or respiratory alkalosis. - **Complete Blood Count (CBC):** Look for anemia and thrombocytopenia, which are common in FES. - **Coagulation Profile:** - **Prothrombin Time (PT) and Partial Thromboplastin Time (PTT):** To detect coagulopathy. - **Fibrinogen Le\u2026",
+      "reference": "Fat embolism syndrome.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4309",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "Given the differential diagnosis and the patient's clinical presentation, the following diagnostic tests are recommended to confirm or rule out the potential conditions: --- ### **1. Tests for Disseminated Histoplasmosis** **a. Histoplasma Antigen Detection:** - **Urine and Serum Antigen Tests:** - **Purpose:** Detect Histoplasma capsulatum polysaccharide antigens. - **Rationale:** Highly sensitive for disseminated histoplasmosis, especially in immunosuppressed patients. **b. Fungal Cultures:** - **Blood Cultures:** - **Purpose:** Identify fungemia. - **Rationale:** Blood cultures may yield H\u2026",
+      "reference": "Pneumocystis jirovecii pneumonia.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4328",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ZK",
+          "score": 2.0
+        }
+      ],
+      "response": "Given the differential diagnosis for the neonatal neck mass, the following diagnostic tests should be ordered to further evaluate and narrow down the diagnosis: 1. **Serum and Urine Catecholamine Metabolites:** - **Tests:** - **Urinary Vanillylmandelic Acid (VMA) and Homovanillic Acid (HVA) Levels** - **Serum Catecholamines (Dopamine, Norepinephrine, Epinephrine)** - **Rationale:** Elevated levels of VMA and HVA are indicative of **neuroblastoma**, which arises from neural crest cells of the sympathetic chain. Assessing catecholamine metabolites helps support or exclude neuroblastoma as a dia\u2026",
+      "reference": "Nodular follicular thyroid neoplasm with a somatic NRAS mutation.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4329",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Consider Given the Differential Diagnosis:** Given the patient's presentation and the differential diagnoses, several diagnostic tests can help confirm the suspected conditions and guide appropriate management. --- 1. **Varicella-Zoster Virus (VZV) Polymerase Chain Reaction (PCR) Testing:** - **Purpose:** To confirm active VZV infection. - **Method:** Collect samples from the skin lesions, such as vesicle fluid, scrapings from the base of lesions, or crusts, for PCR testing to detect VZV DNA. - **Rationale:** A positive VZV PCR result from skin lesions would support the\u2026",
+      "reference": "Varicella\u2013zoster virus infection.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4335",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "Given the differential diagnoses, the following diagnostic tests are recommended to confirm the most likely diagnosis and evaluate other potential conditions: 1. **Cultures and Molecular Testing for Mycobacteria**: - **Blood Cultures for Acid-Fast Bacilli (AFB)**: Obtain multiple blood samples for mycobacterial cultures, specifically targeting the Mycobacterium tuberculosis complex, which includes *Mycobacterium bovis* (the BCG strain). These cultures require specialized media and extended incubation periods. - **Bone Marrow Cultures and AFB Staining**: Perform AFB staining and culture on the\u2026",
+      "reference": "Disseminated Mycobacterium bovis infection.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4337",
+      "task": "cpc_management",
+      "taskLabel": "CPC Management",
+      "priority": "Urgent",
+      "disagreementLevel": 50,
+      "spreadFraction": 0.5,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 2.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 1.0
+        }
+      ],
+      "response": "**Diagnostic Tests to Order Next:** 1. **Biopsy of an Accessible Lesion:** - **Orbital Mass Biopsy:** - **Purpose:** To obtain tissue for histopathological examination, which is essential for a definitive diagnosis. - **Method:** Surgical biopsy of the left anterior superior orbital mass or enlarged right medial rectus muscle. - **Analysis:** Histology and immunohistochemistry to identify characteristic features of Erdheim-Chester Disease (ECD) or other conditions. - **Immunostaining for Markers:** - **CD68:** Positive in ECD histiocytes. - **CD1a:** Typically negative in ECD (helps different\u2026",
+      "reference": "Systemic primary amyloidosis.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "826",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 4.0
+        }
+      ],
+      "response": "How invasive the procedure is (anatomy of targeted lesion for biopsy, etc.), history of bleeding, etc.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "840",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 6.0
+        },
+        {
+          "name": "ES",
+          "score": 2.0
+        }
+      ],
+      "response": "Generally you would not need to bridge unless there is a really high risk of bleeding. However, given liver biopsies may bleed I would discuss with IR and consider bridging this patient inpatient before their biopsy. I would also consider their risk for recurrent DVT/PE and in this case it is quite high which would also suggest we should bridge.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "847",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "risk of bleeding and risk of thrombosis. UpToDate has a whole lists of algorithm. https://www.uptodate.com/contents/perioperative-management-of-patients-receiving-anticoagulants?search=bridging%20anticoagulation&source=search_result&selectedTitle=1~38&usage_type=default&display_rank=1#H2123978",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "850",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "ES",
+          "score": 6.0
+        }
+      ],
+      "response": "1. reason for the anticoagulation, ie high CHADS2Vasc score (5+) or the type of valve that they have. if they have a mechanical mitral valve, they will need to be bridged 2. the type of surgery or procedures: the literature supports that many procedures do not require bridging (BRIDGE trial, 2015)",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3046",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 10.0
+        },
+        {
+          "name": "ZK",
+          "score": 6.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 22-year-old female with several days of fevers with worsening sore throat and dysphagia not relieved by acetaminophen. Differential includes acute bacterial pharyngitis (potentially high Centor score depending on exam), peritonsillar abscess (given associated dysphagia, severe symptoms without improvement), retropharyngeal abscess (similar justification to peritonsillar abscess), and viral pharyngitis (possible but less likely with severe fevers, dysphagia, no other viral upper respiratory symptoms). ### Documentation for Aliquot 2 22-year-old monogamous female wit\u2026",
+      "reference": "Strep Throat",
+      "study": "cabral2024",
+      "model": "PGY2",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3191",
+      "task": "r_idea",
+      "taskLabel": "R-IDEAs",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 10.0,
+      "scores": [
+        {
+          "name": "DR",
+          "score": 4.0
+        },
+        {
+          "name": "ZK",
+          "score": 8.0
+        }
+      ],
+      "response": "Documentation for Aliquot 1 Problem Representation: 21-year-old male wrestler presents with a 6-week history of progressive right knee pain that is dull in nature, exacerbated by bending and prolonged standing, and more pronounced at the end of the day, without significant trauma but associated with a limp. Differential Diagnosis with Justification: Patellofemoral pain syndrome: Justification: Patellofemoral pain syndrome, also known as runner's knee, is common in young adults, particularly athletes. The patient's description of pain when bending the knee and after prolonged standing is chara\u2026",
+      "reference": "Lyme Disease",
+      "study": "cabral2024",
+      "model": "Chatbot",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3360",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 5.0
+        }
+      ],
+      "response": "Functional neurological disorder (conversion disorder) Progressive multifocal leukoencephalopathy Multiple sclerosis Ischemic stroke Subdural hematoma Central nervous system vasculitis Normal pressure hydrocephalus Creutzfeldt-Jakob disease Brain tumor",
+      "reference": "Diffuse large B-cell lymphoma.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3376",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Diagnoses for the 67-Year-Old Man with Sleep and Motor Symptoms **Most Likely Diagnosis:** * **Narcolepsy type 1 (with cataplexy)** **Differential Diagnosis (Ranked by Probability):** 1. **Narcolepsy type 1 (with cataplexy)** 2. **Idiopathic hypersomnia** 3. **Obstructive sleep apnea (already diagnosed, but could be contributing to hypersomnolence)** 4. **Complex sleep-related behaviors associated with REM sleep behavior disorder (RBD)** 5. **Drug-induced hypersomnolence (trazodone, alprazolam)** 6. **Periodic limb movement disorder** 7. **Kleine-Levin syndrome (unlikely given age)** 8. **Aut\u2026",
+      "reference": "Anti-IgLON5 IgG\u2013associated neurologic disorder.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3429",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Diagnoses: **Most Likely Diagnosis:** Vitamin B6 (Pyridoxine) Deficiency **Differential Diagnosis (Most Likely to Least Likely):** 1. **Vitamin B6 (Pyridoxine) Deficiency:** This seems like the most likely diagnosis given the patient's very low vitamin B6 level, neurological symptoms (weakness, gait problems, cognitive decline), and improvement with B6 supplementation (mentioned in other case notes, but not included in this excerpt). 2. **Copper Deficiency:** While the copper level is normal, copper deficiency can mimic B6 deficiency and should be considered. Further testing, such as cerulopl\u2026",
+      "reference": "Rheumatoid arthritis with vasculitis causing a confluent mononeuritis multiplex.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3460",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 3.0
+        },
+        {
+          "name": "BC",
+          "score": 5.0
+        }
+      ],
+      "response": "Dr. Gemini's Input: **Most Likely Diagnosis:** * Cervical neuroblastoma arising from the right sympathetic chain. **Differential Diagnosis (Most Likely to Least Likely):** 1. **Cervical neuroblastoma:** The location, imaging characteristics (hyperechoic, well-circumscribed, vascular on ultrasound; arising from the sympathetic chain on MRI), and elevated alpha-fetoprotein level strongly suggest neuroblastoma. 2. **Congenital teratoma:** Teratomas can occur in the neck and present as a heterogeneous mass, but the imaging findings and elevated alpha-fetoprotein make neuroblastoma more likely. 3.\u2026",
+      "reference": "Nodular follicular thyroid neoplasm with a somatic NRAS mutation.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3464",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 3.0
+        }
+      ],
+      "response": "Lyme carditis Giant cell myocarditis Viral myocarditis (e.g. Coxsackievirus, adenovirus) Bacterial endocarditis Sarcoidosis Chagas disease (Trypanosoma cruzi infection) Autoimmune myocarditis (e.g. systemic lupus erythematosus) Drug-induced myocarditis Parvovirus B19 myocarditis Toxoplasmosis myocarditis",
+      "reference": "Regional myocarditis due to infection with Listeria monocytogenes.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3515",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "Thank you for providing the case description. Based on the information provided, here are my responses: **Most Likely Diagnosis:** Invasive Pulmonary Aspergillosis (IPA) **Differential Diagnosis (ranked by probability):** 1. Invasive Pulmonary Aspergillosis (IPA) 2. Pneumocystis jirovecii Pneumonia (PCP) 3. Cryptococcal Pneumonia 4. Histoplasmosis 5. Blastomycosis 6. Tuberculosis (TB) 7. Nocardiosis 8. Bacterial Pneumonia (e.g., caused by Enterococcus species) 9. Viral Pneumonia (e.g., caused by Influenza or Respiratory Syncytial Virus) 10. Interstitial Lung Disease (ILD) associated with Poly\u2026",
+      "reference": "Aspiration pneumonia.",
+      "study": "buckley2025",
+      "model": "Llama 405B",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3553",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 3.0
+        }
+      ],
+      "response": "Acute pericarditis Myocarditis Stress-induced cardiomyopathy (Takotsubo cardiomyopathy) Acute coronary syndrome Pulmonary embolism Pneumonia with pleuritic involvement Costochondritis Congenital heart disease Systemic lupus erythematosus (SLE) with cardiac involvement",
+      "reference": "Undifferentiated autoimmune rheumatic disease.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3592",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "**Most Likely Diagnosis:** * Leukoencephalopathy due to delayed effects of radiation therapy/chemotherapy **Differential Diagnosis (ranked by probability):** * Frontotemporal Dementia (behavioral variant) * Metabolic Encephalopathy (e.g., hepatic, renal, electrolyte disturbances) * Chronic Traumatic Encephalopathy (CTE) * Wernicke-Korsakoff Syndrome * Paraneoplastic neurological syndrome * Central Nervous System (CNS) relapse of metastatic squamous cell carcinoma * Medication side effects or interactions * Primary CNS lymphoma * Normal pressure hydrocephalus **Important Considerations:** * **\u2026",
+      "reference": "Delayed posthypoxic leukoencephalopathy.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3608",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "BC",
+          "score": 3.0
+        }
+      ],
+      "response": "Most likely diagnosis: Peripartum cardiomyopathy (PPCM) Differential Diagnosis, ranked by probability: 1. Peripartum cardiomyopathy (PPCM) 2. Acute decompensated heart failure secondary to volume overload or stress (Takotsubo) cardiomyopathy 3. Myocarditis of unknown etiology 4. Pulmonary embolism leading to acute right heart strain and subsequent bi-ventricular failure 5. Septic shock with ensuing cardiogenic shock 6. Amniotic fluid embolism leading to cardiovascular collapse 7. Acute coronary syndrome leading to ventricular tachycardia and cardiogenic shock 8. Thyroid storm with cardiogenic\u2026",
+      "reference": "Pregnancy-associated myocardial infarction, probably due to spontaneous coronary-artery dissection.",
+      "study": "buckley2024",
+      "model": "GPT-4 Turbo",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3630",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 5.0
+        }
+      ],
+      "response": "Based on the provided case, the most likely diagnosis is **hemophagocytic lymphohistiocytosis (HLH) secondary to dabrafenib and trametinib therapy**. **Differential Diagnosis (ranked by probability):** 1. **Hemophagocytic Lymphohistiocytosis (HLH) Secondary to Dabrafenib/Trametinib Therapy** - The patient presents with fever, cytopenias (thrombocytopenia), elevated liver enzymes, acute kidney injury, and high fevers that persisted even after discontinuation of dabrafenib and trametinib. HLH is a severe hyperinflammatory syndrome that can be triggered by medications like BRAF inhibitors. 2. **\u2026",
+      "reference": "BRAF\u2013MEK inhibitor\u2013related toxic effects.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3653",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 3.0
+        }
+      ],
+      "response": "**Most Likely Diagnosis:** **Melioidosis** caused by *Burkholderia pseudomallei* infection. --- **Differential Diagnosis (Ranked by Probability):** 1. **Melioidosis (*Burkholderia pseudomallei* Infection)** - **Rationale:** The patient's history of travel to Southeast Asia (Thailand, Guam, Vietnam) raises suspicion for melioidosis, an infection endemic to that region. Melioidosis can remain latent for years and manifest later in life. The clinical features\u2014including recurrent fevers, multiple hepatic and splenic abscesses, pulmonary nodules, and noncaseating granulomas with fibrin-ring featur\u2026",
+      "reference": "Common variable immunodeficiency.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3688",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "As an AI, I do not have access to the latest clinical data or the ability to perform a physical examination, and my responses are generated based on patterns and information in the data I was trained on. Based on the presented case, here are my responses: Most likely diagnosis: 1. Ectopic Cushing's syndrome due to metastatic pancreatic neuroendocrine tumor secreting corticotropin (ACTH). Robust differential diagnosis, ranked by probability: 1. Metastatic pancreatic neuroendocrine tumor with ectopic ACTH secretion. 2. Residual or recurrent pituitary adenoma post-transsphenoidal surgery. 3. Adr\u2026",
+      "reference": "Infection with Blastomyces dermatitidis.",
+      "study": "buckley2024",
+      "model": "GPT-4 Turbo",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3701",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 0.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "I'm ready to provide my responses. **Most likely diagnosis:** Pyogenic liver abscesses and sepsis due to Group A Streptococcal infection. **Robust differential diagnosis (ranked by probability):** 1. Pyogenic liver abscesses and sepsis due to Group A Streptococcal infection 2. Sepsis due to pelvic abscess and endometritis 3. Necrotizing fasciitis 4. Toxic shock syndrome 5. Puerperal sepsis due to retained products of conception 6. Hepatic vein thrombosis (Budd-Chiari syndrome) 7. Sepsis due to infected hematoma or fluid collection 8. Disseminated gonococcal infection 9. Atypical presentation\u2026",
+      "reference": "Sweet\u2019s syndrome.",
+      "study": "buckley2025",
+      "model": "Llama 405B",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3709",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Okay, Dr. [Your Name], here's my current assessment: **Most Likely Diagnosis:** * Hemorrhagic Cystitis due to BK virus **Differential Diagnoses (ranked by probability):** * Other viral hemorrhagic cystitis (e.g., adenovirus) * Drug-induced thrombocytopenia (considering recent medication changes) * Less likely (but still possible): * Immune thrombocytopenic purpura (ITP) * Disseminated intravascular coagulation (DIC) *Ureteral obstruction causing hematuria (less likely given initial CT) **Important Considerations:** * The significant immunosuppression post-transplant makes infection particular\u2026",
+      "reference": "Cytomegalovirus-induced immune thrombocytopenia.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3829",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 3.0
+        }
+      ],
+      "response": "Autoimmune enteropathy Celiac disease Inflammatory bowel disease (Crohn's disease or ulcerative colitis) Food protein-induced enteropathy Graft-versus-host disease Whipple's disease Intestinal lymphangiectasia Chronic infection (e.g., giardiasis or cryptosporidiosis) Collagenous or lymphocytic colitis Microscopic polyangiitis",
+      "reference": "Immune dysregulation, polyendocrinopathy, enteropathy, X-linked (IPEX) syndrome.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3838",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "Most likely diagnosis: Post-transplant lymphoproliferative disorder (PTLD) associated with Epstein-Barr virus (EBV) infection. Differential Diagnosis: 1. Post-transplant lymphoproliferative disorder (PTLD) associated with EBV infection. 2. Secondary infection or sepsis superimposed on PTLD. 3. Clostridioides difficile infection (CDI), considering the positive stool toxin test. 4. Recurrent or new onset hepatorenal syndrome post-transplant. 5. Acute kidney injury (AKI) due to other causes such as drug toxicity or sepsis. 6. Acute liver graft rejection or dysfunction. 7. CMV infection reactivat\u2026",
+      "reference": "Plasma cell myeloma (multiple myeloma).",
+      "study": "buckley2024",
+      "model": "GPT-4 Turbo",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3847",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "Dr. Gemini, here's my analysis of the case information: **Most likely diagnosis:** * IgG4-related disease (IgG4-RD) **Differential diagnoses:** * Giant cell arteritis (GCA) * Other vasculitides (e.g., microscopic polyangiitis, granulomatosis with polyangiitis) * Sarcoidosis * Orbital myositis * Lymphoma * Orbital metastasis * Ocular infection (e.g., toxoplasmosis, Lyme disease, fungal infection) Let me know when you're ready to hear about the diagnostic test and results!",
+      "reference": "Systemic primary amyloidosis.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3928",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 2.0
+        },
+        {
+          "name": "ZK",
+          "score": 4.0
+        }
+      ],
+      "response": "Cicatricial pemphigoid Behcet's disease Pemphigus vulgaris Complex aphthosis Bullous pemphigoid Erythema multiforme Stevens-Johnson syndrome Paraneoplastic pemphigus Drug-induced mucositis Herpes simplex virus infection ANCA-associated vasculitis Angioedema Systemic lupus erythematosus Graft-versus-host disease",
+      "reference": "Eosinophilic leukemia.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3929",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "BC",
+          "score": 2.0
+        }
+      ],
+      "response": "Most likely diagnosis: Beh\u00e7et's disease Differential diagnosis, ranked by their probability: 1. Beh\u00e7et's disease 2. Magic syndrome (mouth and genital ulcers with inflamed cartilage) 3. Bowel-associated dermatosis\u2013arthritis syndrome 4. Pemphigus vulgaris 5. Stevens-Johnson syndrome / Toxic epidermal necrolysis 6. Squamous cell carcinoma of the oral mucosa 7. Systemic lupus erythematosus 8. Reiter's syndrome (reactive arthritis) 9. Crohn's disease 10. Wegener's granulomatosis (granulomatosis with polyangiitis) 11. Syphilis 12. HIV-related ulcerative conditions 13. Tuberculosis (TB) with mucosal\u2026",
+      "reference": "Eosinophilic leukemia.",
+      "study": "buckley2024",
+      "model": "GPT-4 Turbo",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "3935",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "BC",
+          "score": 3.0
+        }
+      ],
+      "response": "Based on the case description, my responses are as follows: **Most likely diagnosis:** Beh\u00e7et\u2019s disease **Differential diagnosis (ranked by probability):** 1. Beh\u00e7et\u2019s disease 2. Pemphigus vulgaris 3. Stevens-Johnson syndrome 4. Erythema multiforme major 5. Lichen planus 6. Discoid lupus erythematosus 7. Dermatomyositis 8. Sj\u00f6gren's syndrome 9. Crohn's disease 10. Ulcerative colitis-associated mucocutaneous lesions 11. Herpes simplex virus infection (despite negative direct immunofluorescence assay) 12. Varicella-zoster virus infection (despite negative direct immunofluorescence assay) 13. Sy\u2026",
+      "reference": "Eosinophilic leukemia.",
+      "study": "buckley2025",
+      "model": "Llama 405B",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4087",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "BC",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 3.0
+        }
+      ],
+      "response": "Transient ischemic attack (TIA) Hemiplegic migraine Conversion disorder Todd's paralysis (postictal paresis) Bell's palsy Intracranial mass or lesion causing focal neurologic symptoms Metabolic or electrolyte disturbance affecting the nervous system Cerebral vasculitis or other inflammatory/infectious CNS processes",
+      "reference": "Moyamoya disease.",
+      "study": "kanjee2023",
+      "model": "GPT-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4101",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Dr. Gemini's Input: **Most Likely Diagnosis/Diagnoses:** * Anomalous origin of the left coronary artery from the pulmonary artery (ALCAPA) **Differential Diagnosis (Most Likely to Least Likely):** 1. Anomalous origin of the left coronary artery from the pulmonary artery (ALCAPA) 2. Myocardial bridging 3. Cardiac sarcoidosis 4. Small-vessel coronary artery disease 5. Vasospastic angina 6. Microvascular coronary dysfunction 7. Exercise-induced laryngeal obstruction (exercise-induced vocal cord dysfunction) 8. Panic disorder with cardiorespiratory symptoms 9. Gastroesophageal reflux disease (GER\u2026",
+      "reference": "Cardiac paraganglioma with a germline mutation in the gene encoding succinate dehydrogenase subunit C (SDHC).",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4103",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "I'm excited to participate in this clinicopathological case conference as \"Dr. Llama\"! After carefully reading the case, I will provide the two requested pieces of information: **Most Likely Diagnosis:** My most likely diagnosis is Hypertrophic Cardiomyopathy (HCM). **Differential Diagnosis (ranked by probability):** 1. Hypertrophic Cardiomyopathy (HCM) 2. Coronary Artery Disease (CAD) 3. Cardiac Channelopathy (e.g., Long QT Syndrome) 4. Cardiac Sarcoidosis 5. Idiopathic Ventricular Tachycardia 6. Anomalous Coronary Artery 7. Myocardial Bridging 8. Cardiac Amyloidosis 9. Fabry Disease 10. Mit\u2026",
+      "reference": "Cardiac paraganglioma with a germline mutation in the gene encoding succinate dehydrogenase subunit C (SDHC).",
+      "study": "buckley2025",
+      "model": "Llama 405B",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4107",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "ZK",
+          "score": 3.0
+        }
+      ],
+      "response": "**Most Likely Diagnosis:** - **Disseminated Mycobacterium avium complex (MAC) infection** --- **Differential Diagnosis (Ranked by Probability):** 1. **Disseminated Mycobacterium avium complex (MAC) Infection** - **Justification:** The patient is severely immunocompromised with advanced HIV infection (CD4 count likely very low given the history). She presents with persistent cough, shortness of breath, weight loss, fever, night sweats, and gastrointestinal symptoms like mouth ulcers and odynophagia. MAC is a common opportunistic infection in patients with a CD4 count less than 50 cells/\u00b5L. It\u2026",
+      "reference": "Advanced human immunodeficiency virus infection, persistent severe acute respiratory syndrome coronavirus 2 infection, and rhinocerebral aspergillus superinfection.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4143",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Sure, here are my most likely diagnoses and differential diagnoses for the case: **Most likely diagnosis:** * Diabetic ketoacidosis (DKA) **Differential diagnoses:** * Hyperosmolar hyperglycemic state (HHS) * Lactic acidosis * Methanol intoxication * Sepsis * Intracerebral hemorrhage * Pancreatitis The patient's presentation of hyperglycemia, polydipsia, polyphagia, weight loss, and fatigue is consistent with DKA. However, other diagnoses on the differential list should also be considered, as they can also present with similar symptoms. The following is a brief discussion of the most likely d\u2026",
+      "reference": "Immune checkpoint inhibitor\u2013induced diabetes.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4165",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "**Most Likely Diagnosis:** * Atypical or Rare Form of Neurodegeneration (e.g., atypical presentation of an otherwise known disease or unusual subtype) **Robust Differential Diagnosis** * Fronto-Temporal Dementia (Behavioral Syndrome) * Creutzfeldt-Jakob Disease (Prion Disease) * Limbic Encephalitis (Autoimmune and/or Paraneoplasitic) * Depression with Catatonia * Functional Neurologic Disorder (Conversion Disorder) * Wernicke's Encephalopathy or other vitamin deficiency * Malignancy (Paraneoplasitc Syndrome) Let me know if you'd like more information on any of these potential conditions.",
+      "reference": "Diffuse large B-cell lymphoma.",
+      "study": "other",
+      "model": "Gemini Ultra 1.0",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4167",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 5.0
+        }
+      ],
+      "response": "**Most Likely Diagnosis:** **Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy (CADASIL)** --- **Differential Diagnosis (Ranked by Probability):** 1. **Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy (CADASIL)** 2. **Creutzfeldt-Jakob Disease (CJD)** 3. **Central Nervous System Vasculitis** 4. **Autoimmune Encephalitis** 5. **Paraneoplastic Encephalomyelitis** 6. **Subcortical Ischemic Vascular Dementia (Binswanger's Disease)** 7. **Progressive Multifocal Leukoencephalopathy (PML)** 8. **Functional Neurologic\u2026",
+      "reference": "Diffuse large B-cell lymphoma.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4170",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "BC",
+          "score": 4.0
+        }
+      ],
+      "response": "Dr. Gemini's Assessment: **Most Likely Diagnosis:** Idiopathic hypertrophic pachymeningitis **Differential Diagnosis (ranked by probability):** 1. **Idiopathic hypertrophic pachymeningitis** 2. IgG4-related disease 3. Sarcoidosis 4. Granulomatosis with polyangiitis (Wegener's) 5. Neurosarcoidosis 6. Lymphoma (e.g., ocular adnexal lymphoma) 7. Multiple sclerosis (atypical presentation) 8. Tolosa-Hunt syndrome 9. Tuberculosis (less likely given negative testing) 10. Syphilis (less likely given negative testing) 11. Lyme neuroborreliosis (less likely given negative testing and location) 12. Fung\u2026",
+      "reference": "Myeloperoxidase antineutrophil cytoplasmic antibody\u2013associated vasculitis.",
+      "study": "other",
+      "model": "Gemini 1.5",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "4203",
+      "task": "cpc_bond",
+      "taskLabel": "CPC Bond",
+      "priority": "Review",
+      "disagreementLevel": 40,
+      "spreadFraction": 0.4,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 5.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 3.0
+        },
+        {
+          "name": "ZK",
+          "score": 5.0
+        }
+      ],
+      "response": "**Most Likely Diagnosis:** **Antiphospholipid Antibody Syndrome (APS)** leading to recurrent pulmonary emboli, pulmonary infarctions, and renal involvement. --- **Differential Diagnosis:** 1. **Antiphospholipid Antibody Syndrome (APS):** - **Justification:** APS is a hypercoagulable disorder characterized by recurrent arterial and venous thromboses. This young man presents with multiple pulmonary emboli and pulmonary infarctions, which are hallmark manifestations of APS. The presence of Raynaud's phenomenon (discoloration of fingers with temperature changes) supports an autoimmune process. Re\u2026",
+      "reference": "Systemic lupus erythematosus with membranous lupus nephritis.",
+      "study": "brodeur2025",
+      "model": "o1-preview",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2414",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 36,
+      "spreadFraction": 0.3571,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 14.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 5.0
+        }
+      ],
+      "response": "History and Physical exam (onset, pattern, duration) Physical exam looking for sites of possible infection (skin exam for infection/cellulitis/abscess, neurologic exam for meningitis/encephalitis, abdominal exam for other intraabdominal process Laboratory tests (blood cultures, urinalysis and urine culture, inflammatory markers, procalcitonin (may help differentiate bacterial infections from other causes of fever) Cultures from Other Sites: Depending on symptoms and clinical suspicion, urine cultures, stool cultures (if diarrhea is present), ascitic fluid cultures, or cultures from any suspic\u2026",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "2434",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 36,
+      "spreadFraction": 0.3571,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 14.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 5.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "Evaluate for sources of infection including in urine, chest, sking and soft tissue and in ascitic fluid. Evaluate for thrombosis post procedure and given patient is high risk with cirrhsosi",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "17",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 6.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 4.0
+        },
+        {
+          "name": "KL",
+          "score": 6.0
+        }
+      ],
+      "response": "Lung cancer TB Fungal infection Inflammatory nodule Hemartoma Metastatic cancer",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "333",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 2.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "If the decision was to keep the patient for further investigations, the point of discharge would depend on the outcomes of those investigations. If a biopsy was performed and showed a benign or treatable condition, discharge could proceed once her post-procedure status was stable. If the investigation pointed towards a more serious diagnosis, the timing would depend on the need for further inpatient treatments or interventions.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "gpt-4",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "337",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 0.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "- once there was a diagnose or ability to rule out emergencies, then the patient could be discharged with plan to follow with PCP or new primary teams if oncologic process, as well as possible new medications if needed (antimicrobial, AC, steroids etc)",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "342",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 0.0
+        }
+      ],
+      "response": "As long as the patient's labs are stable, in our health system, most physicians would defer the workup to the outpatient setting at this point.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "343",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 2.0
+        },
+        {
+          "name": "KL",
+          "score": 1.0
+        }
+      ],
+      "response": "Once the biopsy is done I would discharge her so that she can follow up with the results as an outpatient.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Resident_Non-AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "349",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "ES",
+          "score": 1.0
+        },
+        {
+          "name": "KL",
+          "score": 2.0
+        }
+      ],
+      "response": "Assuming the patient is clinically stable and asymptomatic, the patient can be discharged once all studies have been performed (PET-CT, biopsy). They can be discharged before biopsy results return if we feel confident that the patient will comply with early subspecialty follow up to discuss potential treatment options.",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    },
+    {
+      "id": "350",
+      "task": "management_reasoning",
+      "taskLabel": "Management Reasoning",
+      "priority": "Review",
+      "disagreementLevel": 33,
+      "spreadFraction": 0.3333,
+      "flags": [
+        "high_spread",
+        "high_iqr"
+      ],
+      "flagLabels": [
+        "wide spread",
+        "high IQR"
+      ],
+      "nScores": 2,
+      "scoreScale": 3.0,
+      "scores": [
+        {
+          "name": "AR",
+          "score": 1.0
+        },
+        {
+          "name": "ES",
+          "score": 0.0
+        }
+      ],
+      "response": "once i have obtained the tests; the results can be followed up on as an outpatient if patient is clinically stable",
+      "reference": "",
+      "study": "goh2025",
+      "model": "Attendings_AI",
+      "status": "Needs review",
+      "assignedTo": "Unassigned",
+      "updatedAt": "latest audit",
+      "llmConfidence": null
+    }
+  ],
+  "preScreen": {
+    "available": false,
+    "model": null,
+    "threshold": null,
+    "autoRate": null,
+    "autoPrecision": null,
+    "hardCaseRecall": null,
+    "reasonCounts": {},
+    "byTask": {},
+    "decisions": []
+  },
+  "reviewConfig": {
+    "min_graders": 2,
+    "spread_fraction": 0.2,
+    "iqr_fraction": 0.15,
+    "bimodal_gap_fraction": 0.25,
+    "bimodal_min_group": 2
+  }
+}
