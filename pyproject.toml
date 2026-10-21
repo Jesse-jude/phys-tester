@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phys-tester"
+version = "0.1.0"
+description = "Grader-quality layer for physician-graded clinical AI evaluations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Phys-tester contributors" }]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "pyarrow>=12.0",
+]
+
+[project.optional-dependencies]
+hub = ["huggingface_hub>=0.20"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+phys-tester = "phys_tester.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["phys_tester*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
